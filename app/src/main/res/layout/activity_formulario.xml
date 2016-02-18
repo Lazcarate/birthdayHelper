@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lazcarate.birthdayhelper.Formulario">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/imgFoto"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Nombre"
+        android:id="@+id/textViewNombre"
+        android:layout_toRightOf="@+id/imgFoto" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextNombre"
+        android:layout_toEndOf="@+id/textViewNombre"
+        android:inputType="text" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Sms"
+        android:id="@+id/checkBoxEnvSms"
+        android:layout_below="@+id/editTextNombre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="33dp"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewPhone"
+        android:layout_below="@+id/checkBoxEnvSms"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp"
+        android:text="@string/Telefono" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/editTextPhone"
+        android:layout_alignBottom="@+id/TextViewPhone"
+        android:layout_toRightOf="@+id/TextViewPhone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/FechaNacimiento"
+        android:id="@+id/textViewFechN"
+        android:layout_below="@+id/TextViewPhone"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:id="@+id/editTextFechNac"
+        android:layout_alignBottom="@+id/textViewFechN"
+        android:layout_toRightOf="@+id/textViewFechN" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Mensaje"
+        android:id="@+id/textViewMsg"
+        android:layout_below="@+id/textViewFechN"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextMsg"
+        android:layout_below="@+id/textViewMsg"
+        android:layout_toEndOf="@+id/imgFoto"
+        android:text="@string/msgFelicitacion" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Save"
+        android:id="@+id/buttonSave"
+        android:layout_below="@+id/editTextMsg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:onClick="actContactos"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonEdit"
+        android:layout_alignBottom="@+id/editTextNombre"
+        android:layout_alignEnd="@+id/editTextMsg"
+        android:src="@android:drawable/ic_menu_edit"
+        android:onClick="irAgenda"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonCalendar"
+        android:layout_alignBottom="@+id/editTextFechNac"
+        android:layout_alignEnd="@+id/editTextMsg"
+        android:src="@drawable/calendar"
+        android:onClick="irCalendario"/>
+</RelativeLayout>

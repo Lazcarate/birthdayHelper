@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BirthdayHelper</string>
+    <string name="action_settings">Configurar BirthdayHelper</string>
+    <string name="msgFelicitacion">Feliz cumpleaños!!. Y que cumplas muchos mas.</string>
+    <string name="lista_vacia">No hay registros</string>
+    <string name="Nombre">Nombre:</string>
+    <string name="Telefono">Telefono:</string>
+    <string name="Sms">¿Enviar SMS?</string>
+    <string name="FechaNacimiento">Fecha de Nacimiento:</string>
+    <string name="Mensaje">Mensaje:</string>
+    <string name="Save">Guardar</string>
+</resources>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lazcarate.birthdayhelper.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/icontarta"
+        android:title="iconoTarta"
+        android:showAsAction="always"
+        android:icon="@drawable/birthday_icon"
+        android:orderInCategory="1"/>
+</menu>
